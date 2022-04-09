@@ -1,0 +1,58 @@
+.MenuToggle 
+    height: 20px
+    width: 20px
+    position: fixed
+    top: 50px 
+    left: 250px 
+    background: #fff
+    transition: opacity, left .22s ease-in 
+    z-index:  100
+    border-radius: 3px
+//     position: fixed
+//     top: 40px 
+//     left: 40px 
+//     font-size: 20px 
+//     cursor-size: pointer
+//     color: #fff
+//     transition: opacity .22s ease-in 
+//     z-index:  100
+//     border: 2px solid red
+
+.MenuToggle:hover 
+    opacity: .7 
+
+.MenuToggle.open 
+    left: 20px
+
+.fa-bars     
+    height: 20px
+    width: 20px
+    position: fixed
+    top: 50px 
+    left: 250px 
+    background: white
+    transition: opacity, left .22s ease-in 
+    z-index:  100
+    border-radius: 3px
+
+.fa-times 
+    position: absolute
+    right: 32px
+    top: 32px
+    width: 25px
+    height: 25px
+
+.fa-times:before, .fa-times:after 
+    position: fixed
+    top: 50px 
+    left: 350px 
+    content: ' '
+    height: 25px
+    width: 2.5px
+    background-color: #fff
+
+.fa-times:before 
+    transform: rotate(45deg)
+
+.fa-times:after 
+    transform: rotate(-45deg)
